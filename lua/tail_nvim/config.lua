@@ -24,7 +24,6 @@ local defaults = {
 M.options = {}
 
 M.setup = function(options)
-	print("options =" .. vim.inspect(options))
 	M.options = vim.tbl_extend("force", defaults, options or {})
 	vim.cmd([[ command! TailBuffer lua require('tail_nvim.tailfile'):toggle_tail() ]])
 end
