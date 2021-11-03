@@ -35,5 +35,7 @@ The following are the options(default shown) that can be specified:
   },
   ```
 Note that the ```setup``` method must be called even if you are not overriding any defaults.
-The plugin creates the following command ```TailBuffer``` which acts like a toggle on the current buffer.
+
+## Toggle command
+The plugin creates the following command ```TailBuffer``` which you use to toggle on/off the tailing on the current buffer.
   
