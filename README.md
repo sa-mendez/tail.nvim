@@ -24,14 +24,16 @@ The following are the options(default shown) that can be specified:
   
 ## Example Usage (packer.nvim)
   ```
-  {
+  use {
     "sa-mendez/tail.nvim",
+    after = "nvim-notify",
     config = function()
       require("tail_nvim").setup {
         smart_tail = true,
         notifier = require "notify",
       }
     end,
+    event = "BufRead",
   },
   ```
 Note that the ```setup``` method must be called even if you are not overriding any defaults.
